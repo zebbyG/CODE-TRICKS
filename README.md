@@ -1,2 +1,2 @@
 # python-trials
-Trials code python
+Short lines of code.
