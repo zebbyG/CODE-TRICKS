@@ -45,5 +45,4 @@ def main():
 
     print("\nThe area of the Triangle: ", triangle.area())
 
-
 main()
