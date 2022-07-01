@@ -1,2 +1,2 @@
-# python-trials
-Trials code python
+# python
+Short python functions
