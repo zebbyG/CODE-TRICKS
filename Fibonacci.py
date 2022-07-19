@@ -14,13 +14,9 @@ def fibo(digit):
     return z
 
 
-fibodigit = int(input("How long do you want your Fibonacci series to be: "))
+fibolen = int(input("How long do you want your Fibonacci series to be: "))
 
-n = 1
-while n < fibodigit:
+for n in range(fibolen):
+    print(fibo(n))
 
-    FibSeries = fibo(n)
-    print(FibSeries)
-    n += 1
-
-print("FibSeries is done")
+print("Fibonacci series done")
