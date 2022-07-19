@@ -14,7 +14,12 @@ def fibo(digit):
     return z
 
 
-fibolen = int(input("How long do you want your Fibonacci series to be: "))
+while True:
+    try:
+        fibolen = int(input("How long do you want your Fibonacci series to be: "))
+        break
+    except ValueError:
+        print("Please enter a number")
 
 for n in range(fibolen):
     print(fibo(n))
