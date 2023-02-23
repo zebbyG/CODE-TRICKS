@@ -10,7 +10,7 @@ class Triangle:
 
     @height.setter
     def height(self, value):
-        if value.isdigit():
+        if isinstance(value, int):
             self.__height = value
 
     @property
@@ -20,7 +20,7 @@ class Triangle:
     @base.setter
     def base(self, value):
 
-        if value.isdigit():
+        if isinstance(value, int):
             self.__base = value
 
     def area(self):
@@ -30,11 +30,19 @@ class Triangle:
 def main():
     triangle = Triangle()
 
-    print("Height MUST be a whole number else height will be zero\n")
-    height = input("Enter the height value: ")
+    while True:
+        try:
+            height = int(input("Enter the height value: "))
+            break
+        except ValueError:
+            print("\033[1;31mHeight MUST be a whole number\033[0m\n")
 
-    print("\nbase MUST be a whole number else base will be zero")
-    base = input("\nEnter the base value: ")
+    while True:
+        try:
+            base = int(input("Enter the base value: "))
+            break
+        except ValueError:
+            print("\033[1;31mbase MUST be a whole number\033[0m\n")
 
     triangle.height = height
     triangle.base = base
