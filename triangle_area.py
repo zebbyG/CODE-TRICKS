@@ -32,14 +32,14 @@ def main():
 
     while True:
         try:
-            height = int(input("Enter the height value: "))
+            height = float(input("Enter the height value: "))
             break
         except ValueError:
             print("\033[1;31mHeight MUST be a whole number\033[0m\n")
 
     while True:
         try:
-            base = int(input("Enter the base value: "))
+            base = float(input("Enter the base value: "))
             break
         except ValueError:
             print("\033[1;31mbase MUST be a whole number\033[0m\n")
