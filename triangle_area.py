@@ -1,57 +1,37 @@
-class Triangle:
-
-    def __init__(self, height="0", base="0"):
-        self.height = height
-        self.base = base
-
-    @property
-    def height(self):
-        return self.__height
-
-    @height.setter
-    def height(self, value):
-        if isinstance(value, int):
-            self.__height = value
-
-    @property
-    def base(self):
-        return self.__base
-
-    @base.setter
-    def base(self, value):
-
-        if isinstance(value, int):
-            self.__base = value
-
-    def area(self):
-        return (int(self.__height) * (int(self.__base))) / 2
+from colorama import init, Fore, Style
+import time
+init()
 
 
-def main():
-    triangle = Triangle()
-
-    while True:
-        try:
-            height = float(input("Enter the height value: "))
-            break
-        except ValueError:
-            print("\033[1;31mHeight MUST be a whole number\033[0m\n")
-
-    while True:
-        try:
-            base = float(input("Enter the base value: "))
-            break
-        except ValueError:
-            print("\033[1;31mbase MUST be a whole number\033[0m\n")
-
-    triangle.height = height
-    triangle.base = base
-
-    print("height: ", triangle.height)
-
-    print("base: ", triangle.base)
-
-    print("\nThe area of the Triangle: ", triangle.area())
+def area_triangle(height, base):
+    """
+    :param height: Triangle height = float(input())
+    :param base: Triangle base = float(input())
+    :return: (base * height)\2
+    """
+    return (height * base) * 0.5
 
 
-main()
+while True:
+    try:
+        print(Fore.LIGHTBLUE_EX + "Enter height value\n" + Style.RESET_ALL)
+        height_value = float(input().strip())
+        if not isinstance(height_value, (int, float)):
+            raise ValueError
+        break
+    except ValueError:
+        print(Fore.RED + "Invalid input\n")
+
+while True:
+    try:
+        print(Fore.LIGHTBLUE_EX + "Enter base value\n" + Style.RESET_ALL)
+        base_value = float(input())
+        if not isinstance(base_value, (int,float)):
+            raise ValueError
+        break
+    except ValueError:
+        print(Fore.RED + "Invalid input\n")
+
+print(Fore.YELLOW + "calculating...")
+time.sleep(1.5)
+print(Fore.LIGHTGREEN_EX + f"The area of the triangle is {area_triangle(height_value, base_value):.2f}")
