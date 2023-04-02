@@ -17,6 +17,9 @@ def type_inputs(statement, number_of_statements: int, delay):
         pg.press('Enter')
 
 
+print(Fore.LIGHTBLUE_EX + "\nType in your statement\n" + Style.RESET_ALL)
+message = input()
+
 print(Fore.LIGHTMAGENTA_EX + "Enter how many times you want your statement to be printed[enter a number]\n"
       + Style.RESET_ALL)
 times_statement_printed = int(input())
@@ -24,10 +27,7 @@ times_statement_printed = int(input())
 print(Fore.LIGHTGREEN_EX + "Enter the intervals your statement will be printed in(in seconds)")
 intervals = float(input())
 
-print(Fore.LIGHTBLUE_EX + "\nType in your statement\n" + Style.RESET_ALL)
-message = input()
-
-print(Fore.YELLOW + "The program will run in 5 secs" + Style.RESET_ALL)
-time.sleep(5)
+print(Fore.YELLOW + "The program will run in 7 secs" + Style.RESET_ALL)
+time.sleep(7)
 
 type_inputs(message, times_statement_printed, intervals)
