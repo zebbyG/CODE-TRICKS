@@ -20,4 +20,4 @@
 
 `type_anywhere.py`
 + [x] To print statement * number_of_times with delays after each statements. All inputs.
-  + To run it `python3 type_anywhere.py` after the program prints after what time it will print your statements, navigate anywhere on your machine where you want the statements to be printed and see the magic of pyautogui module.
+  + To run it `python3 type_anywhere.py` after the program prints after what time it will start, navigate anywhere on your machine where you want the statements to be printed and see the magic of pyautogui module.
