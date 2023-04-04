@@ -21,3 +21,7 @@
 `type_anywhere.py`
 + [x] To print statement * number_of_times with delays after each statements. All inputs.
   + To run it `python3 type_anywhere.py` after the program prints after what time it will start, navigate anywhere on your machine where you want the statements to be printed and see the magic of pyautogui module.
+
+`random_1v1.py`
++ [x] A game where you choose attacks on your random enemies until one of you is dead `life < 1`. Enemies launch attacks after you attack. Every attack has an impact unless otherwise.
+  + To run it `python3 random_1v1.py`
