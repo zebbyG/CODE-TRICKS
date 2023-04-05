@@ -56,7 +56,7 @@ while player > 1:
 
         if attack2 == 1:
             time.sleep(1)
-            chance1 = random.randint(21, 29)
+            chance1 = random.randint(23, 29)
             print(Fore.LIGHTGREEN_EX + f"{chance1}% of {choose_enemy}'s life damaged")
             opponent = opponent - chance1
             time.sleep(1.5)
@@ -112,7 +112,7 @@ while player > 1:
 
         if opp_chance2 == 1:
             time.sleep(2.5)
-            damage2 = random.randint(19, 25)
+            damage2 = random.randint(19, 31)
             print(Fore.LIGHTRED_EX + f"{damage2}% of {name}'s life is damaged!!")
             player = player - damage2
             time.sleep(1.5)
