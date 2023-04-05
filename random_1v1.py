@@ -71,7 +71,7 @@ while player > 1:
         print(Fore.GREEN + f"You recovered {attack3}% of life!" + Style.RESET_ALL)
         time.sleep(1.5)
         player = player + attack3
-        print(f"You have {player}% life now!")
+        print(Fore.GREEN + f"You have {player}% life now!")
 
         # Win or lose
 
