@@ -27,7 +27,8 @@ times_statement_printed = int(input())
 print(Fore.LIGHTGREEN_EX + "Enter the intervals your statement will be printed in(in seconds)")
 intervals = float(input())
 
-print(Fore.YELLOW + "The program will run in 7 secs" + Style.RESET_ALL)
-time.sleep(7)
+print(Fore.YELLOW + "Enter how long you want the program to wait before it runs[enter a number]" + Style.RESET_ALL)
+wait = int(input())
+time.sleep(wait)
 
 type_inputs(message, times_statement_printed, intervals)
