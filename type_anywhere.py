@@ -29,6 +29,7 @@ intervals = float(input())
 
 print(Fore.YELLOW + "Enter how long you want the program to wait before it runs[enter a number]" + Style.RESET_ALL)
 wait = int(input())
+print(Fore.GREEN + f"Program running in {wait} second[s]...")
 time.sleep(wait)
 
 type_inputs(message, times_statement_printed, intervals)
