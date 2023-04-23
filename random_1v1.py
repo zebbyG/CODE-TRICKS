@@ -98,7 +98,7 @@ while player > 1:
     opp_chance = random.randint(1, 3)
 
     if opp_chance == 1:
-        time.sleep(2.5)
+        time.sleep(1)
         opp_chance1 = random.randint(13, 17)
         print(Fore.LIGHTRED_EX + f"{opp_chance1}% of {name}'s life is damaged!!")
         player = player - opp_chance1
@@ -107,7 +107,7 @@ while player > 1:
         print(" ")
 
     elif opp_chance == 2:
-        time.sleep(1.5)
+        time.sleep(2)
         opp_chance2 = random.randint(1, 2)
 
         if opp_chance2 == 1:
